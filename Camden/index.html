@@ -5,20 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Statistics Dashboard</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
     <div class="container">
         <h1>Flight Statistics Dashboard</h1>
-        <h2>Select a year:</h2>
-        <div class="row">
-            <div id="selectorDiv">
-                <select id="yearSelector" onchange="optionChanged()"></select>
-            </div>
-        </div>
         </br>
         <div class="card-header">
-            <!-- <h3 class="card-title">Market share by airline</h3> -->
+            <h2>Select a year:</h2>
+            <div class="row">
+                <div id="selectorDiv">
+                    <select id="yearSelector" onchange="optionChanged()"></select>
+                </div>
+            </div>
             <h3 class="card-title">Total flights by airline</h3>
             <div class="row">
                 <div class="col-md-6" id="totalFlightsByAirline"></div>
