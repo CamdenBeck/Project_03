@@ -1,20 +1,56 @@
 <!DOCTYPE html>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Statistics Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Flight Statistics Dashboard</h1>
-        <div id="stats">
-            <!-- Statistics will be displayed here -->
-        </div>
-    </div>
+        </br>
+        <div class="card-header">
+            <h2>Select a year:</h2>
+            <div class="row">
+                <div id="selectorDiv">
+                    <select id="yearSelector" onchange="optionChanged()"></select>
+                </div>
+            </div>
+            <h3 class="card-title">Total flights by airline</h3>
+            <div class="row">
+                <div class="col-md-6" id="totalFlightsByAirline"></div>
+                <div class="col-md-6" id="flightShareByAirline"></div>
+            </div>
+            <h3 class="card-title">Passengers by airline</h3>
+            <div class="row">
+                <div class="col-md-6" id="passengers"></div>
+                <div class="col-md-6" id="passengerShareByAirline"></div>
+            </div>
+            <h2>Select an airline:</h2>
+            <div class="col-md-6" id="selectorDiv">
+                <select id="airlineSelector" onchange="optionChanged()"></select>
+            </div>
+            <h3 class="card-title">Quarterly stats for the selected airline</h3>
+            <div class="row">
+                <h4 class="col-md-4">Flights by quarter</h4>
+                <h4 class="col-md-4">Passengers by quarter</h4>
+                <h4 class="col-md-4">Fares by quarter</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="flightsByQuarter"></div>
+                <div class="col-md-4" id="passengersByQuarter"></div>
+                <div class="col-md-4" id="faresByQuarter"></div>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="static/js/app.js"></script>
+            <h3 class="card-title">Flights per year</h3>
+            <div id="flightsByYear"></div>
+        </div>
+
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="static/js/app.js"></script>
+    </div>
+    
 </body>
 </html>
