@@ -34,8 +34,6 @@ This project is a web application designed to analyze data from airlines from 19
     ```
 3. The correct ".json" data files will then appear, and you can run the index.html file to start the server.
 
-If you would like to, you can view the slides for this project [here](https://docs.google.com/presentation/d/12dbYVF8rqF6TTPlc7Qc9221o_3z1Rj9Rk4xoPle9nx8/edit#slide=id.g1f87997393_0_1544).
-
 ## Licenses
 
 ### Ethical Considerations
