@@ -89,9 +89,9 @@ function buildAirlineData(sampleData) {
   let fares_per_quarter = {}
   sampleData.forEach(flight => {
     if (fares_per_quarter[flight.quarter]) {
-      fares_per_quarter[flight.quarter] += flight.fare;
+      fares_per_quarter[flight.quarter] += flight.fare * flight.passengers;
     } else {
-      fares_per_quarter[flight.quarter] = flight.fare;
+      fares_per_quarter[flight.quarter] = flight.fare * flight.passengers;
     }
   });
 
