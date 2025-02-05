@@ -24,12 +24,17 @@ This project is a web application designed to analyze data from airlines from 19
 
 ## Usage
 
-1. Run the data processing notebook to load the data:
+1. Run the data ETL notebook to load the data:
      ```bash
-     jupyter notebook data_processing.ipynb
+     jupyter notebook ETL.ipynb
      ```
-2. The correct ".json" data files will then appear, and you can run the index.html file to start the server.
-3. Open your browser and navigate to `http://localhost:3000`
+2. Run the data analysis notebook to see the insights in the data:
+    ```bash
+    jupyter notebook analysis.ipynb
+    ```
+3. The correct ".json" data files will then appear, and you can run the index.html file to start the server.
+
+If you would like to, you can view the slides for this project [here](https://docs.google.com/presentation/d/12dbYVF8rqF6TTPlc7Qc9221o_3z1Rj9Rk4xoPle9nx8/edit#slide=id.g1f87997393_0_1544).
 
 ## Licenses
 
